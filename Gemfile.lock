@@ -1,0 +1,140 @@
+GIT
+  remote: https://github.com/jmettraux/ruote.git
+  revision: 4331b13c453655ca5ab48b1a5b37cd94f18a8876
+  branch: ruote2.1
+  specs:
+    ruote (2.1.12)
+      rufus-cloche (>= 0.1.20)
+      rufus-dollar (>= 1.0.4)
+      rufus-json (>= 0.2.5)
+      rufus-mnemo (>= 1.1.0)
+      rufus-scheduler (>= 2.0.8)
+      rufus-treechecker (>= 1.0.4)
+
+GIT
+  remote: https://github.com/kennethkalmer/ruote-amqp.git
+  revision: 1ae324c661ca8608ac8ace7b3eb140079f20d5e6
+  branch: ruote2.1
+  specs:
+    ruote-amqp (2.1.10)
+      amqp (>= 0.6.7)
+      ruote (>= 2.1.10)
+
+GIT
+  remote: https://github.com/kennethkalmer/ruote-kit.git
+  revision: 9e85e5a960ca1216ba82e4e30c45039cc8adb070
+  specs:
+    ruote-kit (2.1.12)
+      bundler
+      haml
+      rufus-json (>= 0.2.5)
+      ruote (~> 2.1.11)
+      sinatra
+      sinatra-respond_to
+      thin
+      yajl-ruby
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    abstract (1.0.0)
+    actionmailer (3.0.3)
+      actionpack (= 3.0.3)
+      mail (~> 2.2.9)
+    actionpack (3.0.3)
+      activemodel (= 3.0.3)
+      activesupport (= 3.0.3)
+      builder (~> 2.1.2)
+      erubis (~> 2.6.6)
+      i18n (~> 0.4)
+      rack (~> 1.2.1)
+      rack-mount (~> 0.6.13)
+      rack-test (~> 0.5.6)
+      tzinfo (~> 0.3.23)
+    activemodel (3.0.3)
+      activesupport (= 3.0.3)
+      builder (~> 2.1.2)
+      i18n (~> 0.4)
+    activerecord (3.0.3)
+      activemodel (= 3.0.3)
+      activesupport (= 3.0.3)
+      arel (~> 2.0.2)
+      tzinfo (~> 0.3.23)
+    activeresource (3.0.3)
+      activemodel (= 3.0.3)
+      activesupport (= 3.0.3)
+    activesupport (3.0.3)
+    amqp (0.6.7)
+      eventmachine (>= 0.12.4)
+    arel (2.0.6)
+    builder (2.1.2)
+    daemons (1.1.0)
+    erubis (2.6.6)
+      abstract (>= 1.0.0)
+    eventmachine (0.12.10)
+    haml (3.0.25)
+    i18n (0.5.0)
+    mail (2.2.14)
+      activesupport (>= 2.3.6)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
+    mime-types (1.16)
+    polyglot (0.3.1)
+    rack (1.2.1)
+    rack-mount (0.6.13)
+      rack (>= 1.0.0)
+    rack-test (0.5.7)
+      rack (>= 1.0)
+    rails (3.0.3)
+      actionmailer (= 3.0.3)
+      actionpack (= 3.0.3)
+      activerecord (= 3.0.3)
+      activeresource (= 3.0.3)
+      activesupport (= 3.0.3)
+      bundler (~> 1.0)
+      railties (= 3.0.3)
+    railties (3.0.3)
+      actionpack (= 3.0.3)
+      activesupport (= 3.0.3)
+      rake (>= 0.8.7)
+      thor (~> 0.14.4)
+    rake (0.8.7)
+    ruby_parser (2.0.5)
+      sexp_processor (~> 3.0)
+    rufus-cloche (0.1.20)
+      rufus-json (>= 0.2.5)
+    rufus-dollar (1.0.4)
+    rufus-json (0.2.5)
+    rufus-mnemo (1.2.0)
+    rufus-scheduler (2.0.8)
+      tzinfo (>= 0.3.23)
+    rufus-treechecker (1.0.4)
+      ruby_parser (>= 2.0.5)
+    sexp_processor (3.0.5)
+    sinatra (1.1.2)
+      rack (~> 1.1)
+      tilt (~> 1.2)
+    sinatra-respond_to (0.6.0)
+      sinatra (~> 1.1)
+    sqlite3-ruby (1.3.2)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    thor (0.14.6)
+    tilt (1.2.1)
+    treetop (1.4.9)
+      polyglot (>= 0.3.1)
+    tzinfo (0.3.23)
+    yajl-ruby (0.7.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rails (= 3.0.3)
+  ruote!
+  ruote-amqp!
+  ruote-kit!
+  sqlite3-ruby
