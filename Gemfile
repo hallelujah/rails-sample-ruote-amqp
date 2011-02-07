@@ -29,6 +29,6 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
-gem "ruote",:git => 'https://github.com/jmettraux/ruote.git', :branch => "ruote2.1"
-gem 'ruote-amqp', :git => 'https://github.com/kennethkalmer/ruote-amqp.git', :branch => 'ruote2.1'
+gem "ruote",:git => 'https://github.com/jmettraux/ruote.git'
+gem 'ruote-amqp', :git => 'https://github.com/kennethkalmer/ruote-amqp.git'
 gem 'ruote-kit', :git => 'https://github.com/kennethkalmer/ruote-kit.git'

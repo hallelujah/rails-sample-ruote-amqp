@@ -3,7 +3,6 @@ class MyLoggerParticipant
 
   def initialize(opts)
     @opts = opts
-    @seen = []
   end
 
   def consume(workitem)
