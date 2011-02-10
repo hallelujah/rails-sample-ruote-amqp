@@ -35,13 +35,15 @@ RuoteKit.engine = Ruote::Engine.new(RUOTE_STORAGE)
 #
 # Stop the task by pressing Ctrl+C
 
-RuoteAMQP::WorkitemListener.new(RuoteKit.engine,'ruote_workitems')
+if $RAKE_TASK
+  RuoteAMQP::Receiver.new(RuoteKit.engine, :queue => 'done', :launchitems => false)
+end
 
 
 unless $RAKE_TASK # don't register participants in rake tasks
   RuoteKit.engine.register do
-    participant :ping, RuoteAMQP::Participant, :queue => "ping", :reply_queue => 'ruote_workitems'
-    participant :pong, RuoteAMQP::Participant, :queue => "pong", :reply_queue => 'ruote_workitems'
+    participant :ping, RuoteAMQP::ParticipantProxy, :queue => "ping", :forget => true, :reply_queue => 'done'
+    participant :pong, RuoteAMQP::ParticipantProxy, :queue => "pong", :forget => true, :reply_queue => 'done'
 
     participant :log_me, MyLoggerParticipant
     # register your own participants using the participant method

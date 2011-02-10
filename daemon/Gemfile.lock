@@ -1,12 +1,12 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    amqp (0.6.7)
+    amqp (0.7.0)
       eventmachine (>= 0.12.4)
     daemon-kit (0.1.8.1)
       eventmachine (>= 0.12.10)
     eventmachine (0.12.10)
-    json (1.4.6)
+    json (1.5.1)
 
 PLATFORMS
   ruby
