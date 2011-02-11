@@ -2,7 +2,7 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
-ruote_*
+ruote_work_*
 tags
 *.swp
 *~
